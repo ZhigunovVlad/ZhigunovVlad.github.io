@@ -1,30 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
-
-@ZhigunovVlad
-the-real-daniil
-/
-DurgerKing
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-DurgerKing/css/cafe.css
-
-danlaptev first commit
-Latest commit 463d115 11 days ago
-History
-0 contributors
-561 lines (540 sloc)  13.8 KB
 
 body {
     font-family: var(--default-font);
@@ -63,6 +36,14 @@ html.dark body {
     --bg-color: #0f0f0f;
     --text-color: #fff;
     --page-hint-color: #9b9ba1;
+    --hint-color: #64666d;
+    --placeholder-color: #5d6163;
+}
+html.light body {
+    --block-bg-color: var(--tg-theme-bg-color);
+    --bg-color: red;
+    --text-color: black;
+    --page-hint-color: yellow;
     --hint-color: #64666d;
     --placeholder-color: #5d6163;
 }
@@ -190,9 +171,10 @@ button,
     height: 30px;
     border-radius: 7px;
     box-sizing: border-box;
-    background-color: var(--main-color);
+    background-color: #ed960b;
     text-transform: uppercase;
-    color: #fff;
+    color: black;
+    button_color: color;
     outline: none;
     border: none;
 }
