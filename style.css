@@ -67,7 +67,10 @@ body.closed .cafe-page {
     -webkit-box-shadow: 0 0.5px rgba(0, 0, 0, .07);
     box-shadow: 0 0.5px rgba(0, 0, 0, .07);
 }
-
+a{
+    text-decoration: none; /* Убираем подчёркивание */
+    color: black;
+}
 .cafe-items {
     display: flex;
     flex-wrap: wrap;
