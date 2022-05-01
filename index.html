@@ -213,8 +213,8 @@
     document.querySelector('#initDataUnsafe').innerHTML = JSON.stringify(initDataUnsafe, null, 2);
     document.querySelector('#themeData').html(JSON.stringify(Telegram.WebApp.themeParams, null, 2));
 
-    Telegram.WebApp.MainButton
-        .setText('Закрыть webView')
+    const mainButton = Telegram.WebApp.MainButton
+        .setText('Корзина')
         .show()
         .onClick(function () { webviewClose(); });
 
@@ -223,7 +223,6 @@
     });
 
     function toggleMainButton(el) {
-        const mainButton = Telegram.WebApp.MainButton;
         if (mainButton.isVisible) {
             mainButton.hide();
             el.innerHTML = 'Показать кнопку';
