@@ -16,6 +16,10 @@
         Telegram.WebApp.onEvent('themeChanged', setThemeClass);
         setThemeClass();
     </script>
+    <script> 
+        function ret() {
+            alert('qwerty');}
+    </script>
     <link href="style.css" rel="stylesheet">
     <title>Title</title>
 </head>
@@ -39,10 +43,6 @@
             </button>
             <button class="cafe-item-incr-button js-item-incr-btn button-item ripple-handler" onclick="ret()">
                 <span class="button-item-label">Add</span>
-                <script> 
-                    function ret() {
-                        alert('qwerty');
-                }</script>
                 <span class="ripple-mask"><span class="ripple"></span></span>
             </button>
         </div>
