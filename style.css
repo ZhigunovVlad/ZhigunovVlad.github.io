@@ -461,7 +461,10 @@ body.order-mode .cafe-order-overview {
     position: relative;
     z-index: 1;
 }
-
+section {
+    padding: 15px 15px 65px;
+    text-align: center
+}
 .cafe-item-add-button .ripple,
 .cafe-item-incr-button .ripple {
     background-color: #ed960b;
