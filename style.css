@@ -116,7 +116,7 @@ body.order-mode .cafe-items {
     margin: 0 auto;
 }
 .cafe-item-photo .cafe-item-lottie {
-    width: 74px;
+    width: 80px;
 }
 .cafe-item-lottie:before {
     content: '';
