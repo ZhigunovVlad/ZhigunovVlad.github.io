@@ -67,10 +67,7 @@ body.closed .cafe-page {
     -webkit-box-shadow: 0 0.5px rgba(0, 0, 0, .07);
     box-shadow: 0 0.5px rgba(0, 0, 0, .07);
 }
-a{
-    text-decoration: none; /* Убираем подчёркивание */
-    color: black;
-}
+
 .cafe-items {
     display: flex;
     flex-wrap: wrap;
@@ -174,9 +171,9 @@ button,
     height: 30px;
     border-radius: 7px;
     box-sizing: border-box;
-    background-color: #ed960b;
+    background-color: #f8a917;
     text-transform: uppercase;
-    color: black;
+    color: white;
     button_color: color;
     outline: none;
     border: none;
@@ -194,6 +191,11 @@ button,
     animation: var(--animation) both;
     pointer-events: none;
     z-index: 3;
+}
+
+a{
+    text-decoration: none; /* Убираем подчёркивание */
+    color:white;
 }
 .cafe-item-incr-button {
     position: absolute !important;
