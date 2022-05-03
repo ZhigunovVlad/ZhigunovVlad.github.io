@@ -69,7 +69,7 @@ body.closed .cafe-page {
 }
 
 .cafe-items {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 480px;
