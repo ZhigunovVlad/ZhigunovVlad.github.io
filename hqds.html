@@ -16,6 +16,17 @@
         Telegram.WebApp.onEvent('themeChanged', setThemeClass);
         setThemeClass();
     </script>
+    <script>
+        function qt() {
+            btn2 = document.createElement('BUTTON');
+            btn2.textContent = 'Вторая кнопка';
+            btn2.onclick = function() {
+                alert(100);
+                this.parentElement.removeChild(this);
+            }
+            document.body.appendChild(btn2);
+        } // qt()
+    </script>
     <link href="style.css" rel="stylesheet">
     <title>Title</title>
 </head>
@@ -31,14 +42,14 @@
         </div>
         <div class="cafe-item-label">
             <span class="cafe-item-title">Кола</span>
-            <span class="cafe-item-price">1500р</span>
+            <span class="cafe-item-price">$25</span>
         </div>
         <div class="cafe-item-buttons">
             <button class="cafe-item-decr-button js-item-decr-btn button-item ripple-handler">
                 <span class="ripple-mask"><span class="ripple"></span></span>
             </button>
             <button class="cafe-item-incr-button js-item-incr-btn button-item ripple-handler">
-                <span class="button-item-label">Add</span>
+                <span class="button-item-label" onclick="qt()">Add</span>
                 <span class="ripple-mask"><span class="ripple"></span></span>
             </button>
         </div>
@@ -53,7 +64,7 @@
         </div>
         <div class="cafe-item-label">
             <span class="cafe-item-title">Малина</span>
-            <span class="cafe-item-price">1500р</span>
+            <span class="cafe-item-price">$5</span>
         </div>
         <div class="cafe-item-buttons">
             <button class="cafe-item-decr-button js-item-decr-btn button-item ripple-handler">
@@ -74,7 +85,7 @@
         </div>
         <div class="cafe-item-label">
             <span class="cafe-item-title">Черника</span>
-            <span class="cafe-item-price">1500р</span>
+            <span class="cafe-item-price">$15</span>
         </div>
         <div class="cafe-item-buttons">
             <button class="cafe-item-decr-button js-item-decr-btn button-item ripple-handler">
@@ -95,7 +106,7 @@
         </div>
         <div class="cafe-item-label">
             <span class="cafe-item-title">Черника</span>
-            <span class="cafe-item-price">1500р</span>
+            <span class="cafe-item-price">$15</span>
         </div>
         <div class="cafe-item-buttons">
             <button class="cafe-item-decr-button js-item-decr-btn button-item ripple-handler">
@@ -109,8 +120,8 @@
     </div>
 </section>
 <section class="cafe-page cafe-items">
-    <div class="cafe-item">
-        <button class="js-item-incr-btn button-item ripple-handler">
+    <div class="cafe-item-buttons">
+        <button class="cafe-item-incr-button js-item-incr-btn button-item ripple-handler">
             <a href="index.html">Назад</a>
         </button>
     </div>
