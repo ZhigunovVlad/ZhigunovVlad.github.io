@@ -168,7 +168,7 @@ var Cafe = {
                 is_visible: !!Cafe.canPay,
                 text: 'VIEW ORDER',
                 color: '#31b545'
-            }).showProgress();
+            }).hideProgress();
         }
     },
     updateTotalPrice: function() {
