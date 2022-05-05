@@ -40,13 +40,13 @@ var Cafe = {
         initRipple();
     },
     initLotties: function() {
-        // $('.js-item-lottie').each(function() {
-        //     RLottie.init(this, {
-        //         maxDeviceRatio: 2,
-        //         cachingModulo: 3,
-        //         noAutoPlay: true
-        //     });
-        // });
+        $('.js-item-lottie').each(function() {
+            RLottie.init(this, {
+                maxDeviceRatio: 2,
+                cachingModulo: 3,
+                noAutoPlay: true
+            });
+        });
     },
     eLottieClicked: function(e) {
         if (Cafe.isClosed) {
@@ -81,9 +81,9 @@ var Cafe = {
         counterEl.text(count ? count : 1);
         var isSelected = itemEl.hasClass('selected');
         if (!isSelected && count > 0) {
-            // $('.js-item-lottie', itemEl).each(function() {
-            //     RLottie.playOnce(this);
-            // });
+            $('.js-item-lottie', itemEl).each(function() {
+                RLottie.playOnce(this);
+            });
         }
         var anim_name = isSelected ? (delta > 0 ? 'badge-incr' : (count > 0 ? 'badge-decr' : 'badge-hide')) : 'badge-show';
         var cur_anim_name = counterEl.css('animation-name');
