@@ -6,7 +6,7 @@
 
 var Cafe = {
     canPay: true,
-    modeOrder: false,
+    modeOrder: true,
     totalPrice: 29,
 
     init: function(options) {
