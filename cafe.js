@@ -213,9 +213,9 @@ var Cafe = {
         }
         if (mode_order) {
             var height = $('.cafe-items').height();
-            $('.js-item-lottie').each(function() {
-                RLottie.setVisible(this, false);
-            });
+//             $('.js-item-lottie').each(function() {
+//                 RLottie.setVisible(this, false);
+//             });
             $('.cafe-order-overview').show();
             $('.cafe-items').css('maxHeight', height).redraw();
             $('body').addClass('order-mode');
@@ -223,24 +223,24 @@ var Cafe = {
                 autosize.update(this);
             });
             Telegram.WebApp.expand();
-            setTimeout(function() {
-                $('.js-item-lottie').each(function() {
-                    RLottie.setVisible(this, true);
-                });
-            }, anim_duration);
+//             setTimeout(function() {
+//                 $('.js-item-lottie').each(function() {
+//                     RLottie.setVisible(this, true);
+//                 });
+//             }, anim_duration);
         } else {
-            $('.js-item-lottie').each(function() {
-                RLottie.setVisible(this, false);
-            });
+//             $('.js-item-lottie').each(function() {
+//                 RLottie.setVisible(this, false);
+//             });
             $('body').removeClass('order-mode');
-            setTimeout(function() {
-                $('.cafe-items').css('maxHeight', '');
-                $('.cafe-order-overview').hide();
-                $('.js-item-lottie').each(function() {
-                    RLottie.setVisible(this, true);
-                });
-            }, anim_duration);
-        }
+//             setTimeout(function() {
+//                 $('.cafe-items').css('maxHeight', '');
+//                 $('.cafe-order-overview').hide();
+//                 $('.js-item-lottie').each(function() {
+//                     RLottie.setVisible(this, true);
+//                 });
+//             }, anim_duration);
+         }
         Cafe.updateMainButton();
     },
     toggleLoading: function(loading) {
