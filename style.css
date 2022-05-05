@@ -149,7 +149,7 @@ body.order-mode .cafe-items {
     background-color: currentColor;
     margin: 7px 4px;
 }
-.cafe-item-buttons {
+.cafe-item-buttons {      /*кнопки + и -*/
     display: flex;
     width: 80px;
     justify-content: space-between;
@@ -158,7 +158,7 @@ body.order-mode .cafe-items {
     transition: all var(--animation);
 }
 button {
-    cursor: pointer;
+    cursor: pointer;  /*при наведении на кнопку появляется кулак с пальцем*/
 }
 button,
 .cafe-item-counter {
@@ -178,7 +178,7 @@ button,
     outline: none;
     border: none;
 }
-.cafe-item-counter {
+.cafe-item-counter {      /*счеткик кол-ва товара в верхнем углу*/
     position: absolute;
     right: 0;
     top: 0;
@@ -463,7 +463,7 @@ body.order-mode .cafe-order-overview {
 }
 section {
     padding: 15px 15px 15px;
-    text-align: center
+    text-align: center;
 }
 .cafe-item-add-button .ripple,
 .cafe-item-incr-button .ripple {
