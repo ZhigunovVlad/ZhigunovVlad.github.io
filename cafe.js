@@ -165,7 +165,7 @@ var Cafe = {
             }
         } else {
             mainButton.setParams({
-                is_visible: !!Cafe.canPay,
+                is_visible: Cafe.canPay,
                 text: 'VIEW ORDER',
                 color: '#31b545'
             }).hideProgress();
