@@ -157,19 +157,18 @@ var Cafe = {
                     color: '#65c36d'
                 }).showProgress();
             } else {
-                mainButton.setParams({
-                    is_visible: !!Cafe.canPay,
-                    text: 'PAY ' + Cafe.formatPrice(Cafe.totalPrice),
-                    color: '#31b545'
-                }).hideProgress();
-            }
-        } else {
             mainButton.setParams({
-                is_visible: true,
+                is_visible: !!Cafe.canPay,
                 text: 'VIEW ORDER',
                 color: '#31b545'
             }).hideProgress();
         }
+        } else {
+          mainButton.setParams({
+              is_visible: !!Cafe.canPay,
+              text: 'PAY ' + Cafe.formatPrice(Cafe.totalPrice),
+              color: '#31b545'
+          }).hideProgress(); 
     },
     updateTotalPrice: function() {
         var total_price = 0;
