@@ -14,7 +14,7 @@ var Cafe = {
         Cafe.apiUrl = options.apiUrl;
         Cafe.userId = options.userId;
         Cafe.userHash = options.userHash;
-        Cafe.initLotties();
+        //Cafe.initLotties();
         var userId = Telegram.WebApp.initData && Telegram.WebApp.initData.user && Telegram.WebApp.initData.user.id || Cafe.userId;
         if(options.debug) {
             var userId = 2349000000;
@@ -39,15 +39,15 @@ var Cafe = {
         }).onClick(Cafe.mainBtnClicked);
         initRipple();
     },
-    initLotties: function() {
-        $('.js-item-lottie').each(function() {
-            RLottie.init(this, {
-                maxDeviceRatio: 2,
-                cachingModulo: 3,
-                noAutoPlay: true
-            });
-        });
-    },
+//     initLotties: function() {
+//         $('.js-item-lottie').each(function() {
+//             RLottie.init(this, {
+//                 maxDeviceRatio: 2,
+//                 cachingModulo: 3,
+//                 noAutoPlay: true
+//             });
+//         });
+//     },
     eLottieClicked: function(e) {
         if (Cafe.isClosed) {
             return false;
@@ -80,11 +80,11 @@ var Cafe = {
         var counterEl = $('.js-item-counter', itemEl);
         counterEl.text(count ? count : 1);
         var isSelected = itemEl.hasClass('selected');
-        if (!isSelected && count > 0) {
-            $('.js-item-lottie', itemEl).each(function() {
-                RLottie.playOnce(this);
-            });
-        }
+//         if (!isSelected && count > 0) {
+//             $('.js-item-lottie', itemEl).each(function() {
+//                 RLottie.playOnce(this);
+//             });
+//         }
         var anim_name = isSelected ? (delta > 0 ? 'badge-incr' : (count > 0 ? 'badge-decr' : 'badge-hide')) : 'badge-show';
         var cur_anim_name = counterEl.css('animation-name');
         if ((anim_name == 'badge-incr' || anim_name == 'badge-decr') && anim_name == cur_anim_name) {
