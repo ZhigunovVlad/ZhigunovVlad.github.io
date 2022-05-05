@@ -153,9 +153,8 @@ var Cafe = {
         if (Cafe.modeOrder) {
             if (Cafe.isLoading) {
                 mainButton.setParams({
-                    is_visible: !!Cafe.canPay,
-                    text: 'VIEW ORDER',
-                    color: '#31b545'
+                    is_visible: true,
+                    color: '#65c36d'
                 }).showProgress();
             } else {
                 mainButton.setParams({
