@@ -1,4 +1,3 @@
-
 body {
     font-family: var(--default-font);
     font-size: 13px;
@@ -131,7 +130,7 @@ body.order-mode .cafe-items {
     height: 100%;
 }
 .cafe-item-label {
-    margin: 5px;
+    margin: 10px;
     display: flex;
     justify-content: center;
 }
@@ -355,14 +354,14 @@ body.order-mode .cafe-order-overview {
     padding: 3px 0;
 }
 .cafe-order-item-counter {
-    color: var(--main-color);
+    color: black;
 }
 .cafe-order-item-description {
     font-size: 14px;
     line-height: 17px;
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
-    color: var(--page-hint-color);
+    color: black;
     padding: 2px 0;
 }
 .cafe-order-item-price {
