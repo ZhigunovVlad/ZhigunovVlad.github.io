@@ -131,6 +131,7 @@ body.order-mode .cafe-items {
     height: 100%;
 }
 .cafe-item-label {
+    margin: 5px;
     display: flex;
     justify-content: center;
 }
