@@ -6,7 +6,7 @@
 
 var Cafe = {
     canPay: true,
-    modeOrder: true,
+    modeOrder: false,
     totalPrice: 29,
 
     init: function(options) {
@@ -14,7 +14,7 @@ var Cafe = {
         Cafe.apiUrl = options.apiUrl;
         Cafe.userId = options.userId;
         Cafe.userHash = options.userHash;
-        Cafe.initLotties();
+        // Cafe.initLotties();
         var userId = Telegram.WebApp.initData && Telegram.WebApp.initData.user && Telegram.WebApp.initData.user.id || Cafe.userId;
         if(options.debug) {
             var userId = 2349000000;
@@ -80,11 +80,11 @@ var Cafe = {
         var counterEl = $('.js-item-counter', itemEl);
         counterEl.text(count ? count : 1);
         var isSelected = itemEl.hasClass('selected');
-        if (!isSelected && count > 0) {
-            // $('.js-item-lottie', itemEl).each(function() {
-            //     RLottie.playOnce(this);
-            // });
-        }
+        //if (!isSelected && count > 0) {
+        // $('.js-item-lottie', itemEl).each(function() {
+        //     RLottie.playOnce(this);
+        // });
+        //}
         var anim_name = isSelected ? (delta > 0 ? 'badge-incr' : (count > 0 ? 'badge-decr' : 'badge-hide')) : 'badge-show';
         var cur_anim_name = counterEl.css('animation-name');
         if ((anim_name == 'badge-incr' || anim_name == 'badge-decr') && anim_name == cur_anim_name) {
@@ -117,7 +117,7 @@ var Cafe = {
         console.log("clicked");
     },
     formatPrice: function(price) {
-        return  Cafe.formatNumber(price)+'р';
+        return Cafe.formatNumber(price / 1, 2, '.', ',')+'р';
     },
     formatNumber: function(number, decimals, decPoint, thousandsSep) {
         number = (number + '').replace(/[^0-9+\-Ee.]/g, '')
@@ -213,9 +213,9 @@ var Cafe = {
         }
         if (mode_order) {
             var height = $('.cafe-items').height();
-            $('.js-item-lottie').each(function() {
-                RLottie.setVisible(this, false);
-            });
+            // $('.js-item-lottie').each(function() {
+            //     RLottie.setVisible(this, false);
+            // });
             $('.cafe-order-overview').show();
             $('.cafe-items').css('maxHeight', height).redraw();
             $('body').addClass('order-mode');
@@ -223,23 +223,23 @@ var Cafe = {
                 autosize.update(this);
             });
             Telegram.WebApp.expand();
-            setTimeout(function() {
-                $('.js-item-lottie').each(function() {
-                    RLottie.setVisible(this, true);
-                });
-            }, anim_duration);
+            // setTimeout(function() {
+            //     $('.js-item-lottie').each(function() {
+            //         RLottie.setVisible(this, true);
+            //     });
+            // }, anim_duration);
         } else {
-            $('.js-item-lottie').each(function() {
-                RLottie.setVisible(this, false);
-            });
+            // $('.js-item-lottie').each(function() {
+            //     RLottie.setVisible(this, false);
+            // });
             $('body').removeClass('order-mode');
-            setTimeout(function() {
-                $('.cafe-items').css('maxHeight', '');
-                $('.cafe-order-overview').hide();
-                $('.js-item-lottie').each(function() {
-                    RLottie.setVisible(this, true);
-                });
-            }, anim_duration);
+            // setTimeout(function() {
+            //     $('.cafe-items').css('maxHeight', '');
+            //     $('.cafe-order-overview').hide();
+            //     $('.js-item-lottie').each(function() {
+            //         RLottie.setVisible(this, true);
+            //     });
+            // }, anim_duration);
         }
         Cafe.updateMainButton();
     },
