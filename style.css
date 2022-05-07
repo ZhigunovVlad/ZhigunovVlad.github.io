@@ -41,7 +41,6 @@ html.dark body {
 }
 html.light body {
     --block-bg-color: var(--tg-theme-bg-color);
-    --bg-color: red;
     --text-color: black;
     --page-hint-color: yellow;
     --hint-color: #64666d;
