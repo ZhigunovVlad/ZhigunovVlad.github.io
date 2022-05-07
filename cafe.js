@@ -129,17 +129,17 @@ var Cafe = {
                 }).showProgress();
             } else {
                 mainButton.setParams({
-                    is_visible: true,
+                    is_visible: !!Cafe.canPay,
                     text: 'Оплатить ' + Cafe.formatPrice(Cafe.totalPrice),
                     color: '#31b545'
-                }).showProgress();
+                }).hideProgress();
             }
         } else {
             mainButton.setParams({
-                is_visible: true,
+                is_visible: !!Cafe.canPay,
                 text: 'Корзина',
                 color: '#31b545'
-            }).showProgress();
+            }).hideProgress();
         }
     },
     updateTotalPrice: function() {
