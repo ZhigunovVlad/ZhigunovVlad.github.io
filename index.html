@@ -23,7 +23,7 @@
 <section class="cafe-page cafe-items" id="Menu">
     <div class="cafe-item">
         <div class="cafe-item-photo">
-            <a href="hqds.html">
+            <a onclick="viewHQD()">
                 <picture class="cafe-item-lottie">
                     <img src="../img/hqd/hqd3.png">
                 </picture>
@@ -37,7 +37,7 @@
     </div>
     <div class="cafe-item">
         <div class="cafe-item-photo">
-                <a href="fumari.html">
+                <a onclick="viewFumari()">
                     <picture class="cafe-item-lottie js-item-lottie">
                     <img src="../img/fumari/fumari-main.png">
                     </picture>
@@ -53,7 +53,7 @@
 
 
 <!--Категория с hqd-->
-<section class="cafe-page cafe-items" style="display: none" id="hqd">
+<section class="cafe-page cafe-items" style="display: none" id="hqdMenu">
     <div class="cafe-item js-item" data-item-id="1" data-item-price="1500">
         <div class="cafe-item-counter js-item-counter">1</div>
         <div class="cafe-item-photo">
@@ -138,6 +138,8 @@
             </button>
         </div>
     </div>
+</section>
+<section class="cafe-page cafe-items" id="hqdBack" style="display: none">
     <div class="cafe-item">
         <button onclick="back()">
             <a>Назад</a>
@@ -231,6 +233,8 @@
             </button>
         </div>
     </div>
+</section>
+<section class="cafe-page cafe-items" id="fumariBack" style="display: none">
     <div class="cafe-item">
         <button onclick="back()">
 <!--            <a href="index.html">Назад</a>-->
@@ -359,23 +363,27 @@
     </div>
 </section>
 <div class="cafe-status-wrap">
-    <div class="cafe-status js-status""></div>
+    <div class="cafe-status js-status"></div>
 
 </div>
 
 </body>
 <script>
     function viewHQD(){
-        document.getElementById("hqd").style.display = "flex";
+        document.getElementById("hqdMenu").style.display = "flex";
+        document.getElementById("hqdBack").style.display = "flex";
         document.getElementById("Menu").style.display = "none";
     };
     function viewFumari(){
         document.getElementById("fumariMenu").style.display = "flex";
+        document.getElementById("fumariBack").style.display = "flex";
         document.getElementById("Menu").style.display = "none";
     };
     function back(){
-        document.getElementById("hqd").style.display = "none";
+        document.getElementById("hqdMenu").style.display = "none";
         document.getElementById("fumariMenu").style.display = "none";
+        document.getElementById("hqdBack").style.display = "none";
+        document.getElementById("fumariBack").style.display = "none";
         document.getElementById("Menu").style.display = "flex";
     }
 </script>
