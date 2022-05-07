@@ -278,7 +278,7 @@ a{
     justify-content: center;
     align-items: center;
     border-radius: 0;
-    background-color: #e64d44;
+    background-color: var(--tg-theme-bg-color);
     box-shadow: 0 var(--status-height) #e64d44;
     color: #fff;
     height: var(--status-height);
