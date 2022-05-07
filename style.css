@@ -310,7 +310,6 @@ body.order-mode .cafe-order-overview {
     align-items: center;
 }
 .cafe-order-header {
-    text-align: left;
     font-size: 17px;
     line-height: 21px;
     text-transform: uppercase;
@@ -332,7 +331,7 @@ body.order-mode .cafe-order-overview {
     display: flex;
 }
 .cafe-order-item-label {
-    text-align: left;
+    flex-grow: 1;
 }
 .cafe-order-item-photo {
     text-align: center;
@@ -365,7 +364,6 @@ body.order-mode .cafe-order-overview {
     padding: 2px 0;
 }
 .cafe-order-item-price {
-    text-align: right;
     font-size: 14px;
     line-height: 17px;
     font-weight: 500;
