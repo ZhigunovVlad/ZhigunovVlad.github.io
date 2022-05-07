@@ -76,6 +76,20 @@
             </button>
         </div>
     </div>
+    <div class="cafe-item js-item">
+        <div class="cafe-item-photo">
+            <a href="fummo.html">
+                <picture class="cafe-item-lottie js-item-lottie">
+                    <img src="./img/fummo/main-fummo.jpg">
+                </picture>
+            </a>
+        </div>
+        <div class="cafe-item-buttons">
+            <button class="cafe-item-incr-button js-item-incr-btn button-item ripple-handler">
+                <a href="fummo.html">Fummo</a>
+            </button>
+        </div>
+    </div>
 </section>
 <script type="application/javascript">
     Telegram.WebApp.ready();
@@ -87,11 +101,11 @@
     document.querySelector('#initData').innerHTML = JSON.stringify(initData, null, 2);
     document.querySelector('#initDataUnsafe').innerHTML = JSON.stringify(initDataUnsafe, null, 2);
     document.querySelector('#themeData').html(JSON.stringify(Telegram.WebApp.themeParams, null, 2));
-    
+
     Telegram.WebApp.onEvent('themeChanged', function () {
         document.querySelector('#themeData').innerHTML = JSON.stringify(Telegram.WebApp.themeParams, null, 2);
     });
-    
+
     function webviewClose() {
         Telegram.WebApp.close();
     }
