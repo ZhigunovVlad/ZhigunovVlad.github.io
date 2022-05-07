@@ -310,6 +310,7 @@ body.order-mode .cafe-order-overview {
     align-items: center;
 }
 .cafe-order-header {
+    text-align: left;
     font-size: 17px;
     line-height: 21px;
     text-transform: uppercase;
@@ -331,7 +332,7 @@ body.order-mode .cafe-order-overview {
     display: flex;
 }
 .cafe-order-item-label {
-    flex-grow: 1;
+    text-align: left;
 }
 .cafe-order-item-photo {
     text-align: center;
@@ -354,7 +355,7 @@ body.order-mode .cafe-order-overview {
     padding: 3px 0;
 }
 .cafe-order-item-counter { /*счётчик предметов*/
-    
+
 }
 .cafe-order-item-description { /*Описание для предмета*/
     font-size: 14px;
