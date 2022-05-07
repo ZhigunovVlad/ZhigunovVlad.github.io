@@ -353,15 +353,14 @@ body.order-mode .cafe-order-overview {
     font-weight: 700;
     padding: 3px 0;
 }
-.cafe-order-item-counter {
-    color: black;
+.cafe-order-item-counter { /*счётчик предметов*/
+    
 }
-.cafe-order-item-description {
+.cafe-order-item-description { /*Описание для предмета*/
     font-size: 14px;
     line-height: 17px;
     font-weight: 500;
     -webkit-font-smoothing: antialiased;
-    color: black;
     padding: 2px 0;
 }
 .cafe-order-item-price {
