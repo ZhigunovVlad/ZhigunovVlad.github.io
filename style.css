@@ -1,6 +1,6 @@
 body {
     font-family: var(--default-font);
-    font-size: 13px;
+    font-size: 14px;
     line-height: 16px;
     font-weight: 500;
     background-color: var(--block-bg-color);
@@ -87,7 +87,7 @@ body.order-mode .cafe-items {
 .cafe-item,
 .cafe-item-shadow {
     position: relative;
-    width: 120px;
+    width: 144px;
     height: 144px;
     padding: 4px 5px 6px;
     margin-bottom: 15px;
@@ -101,7 +101,7 @@ body.order-mode .cafe-items {
 }
 .cafe-item-photo {
     position: relative;
-    height: 78px;
+    height: 90px;
 }
 .cafe-item-photo .cafe-item-emoji {
     font-size: 70px;
@@ -114,7 +114,7 @@ body.order-mode .cafe-items {
     margin: 0 auto;
 }
 .cafe-item-photo .cafe-item-lottie {
-    width: 80px;
+    width: 90px;
 }
 .cafe-item-lottie:before {
     content: '';
@@ -150,7 +150,7 @@ body.order-mode .cafe-items {
 }
 .cafe-item-buttons {      /*кнопки + и -*/
     display: flex;
-    width: 80px;
+    width: 90px;
     justify-content: space-between;
     margin: 10px auto 0;
     position: relative;
