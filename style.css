@@ -365,6 +365,7 @@ body.order-mode .cafe-order-overview {
     padding: 2px 0;
 }
 .cafe-order-item-price {
+    text-align: right;
     font-size: 14px;
     line-height: 17px;
     font-weight: 500;
