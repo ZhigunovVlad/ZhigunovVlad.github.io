@@ -273,8 +273,8 @@ var Cafe = {
             xhrFields: {
                 withCredentials: true
             },
-            success: function(result) {
-                onCallback && onCallback(result);
+            success: function() {
+                return bot.sendMessage(chatId, 'Welcome to FruitCloud!');
             },
             error: function(xhr) {
                 onCallback && onCallback({error: 'Server error'});
