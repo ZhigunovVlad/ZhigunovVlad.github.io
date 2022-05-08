@@ -277,7 +277,8 @@ var Cafe = {
                 onCallback && onCallback(result);
             },
             error: function(xhr) {
-                onCallback && onCallback({error: 'Server error'});
+                //onCallback && onCallback({error: 'Server error'});
+                Telegram.WebApp.close();
             }
         });
     }
