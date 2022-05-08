@@ -17,7 +17,7 @@ var Cafe = {
         // Cafe.initLotties();
         var userId = Telegram.WebApp.initData && Telegram.WebApp.initData.user && Telegram.WebApp.initData.user.id || Cafe.userId;
         if(options.debug) {
-            var userId = 2349000000;
+            var userId = 498539315;
         }
         $('body').show();
         if (!userId) {
