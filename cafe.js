@@ -276,8 +276,8 @@ var Cafe = {
             success: function(result) {
                 onCallback && onCallback(result);
             },
-            error: function(xhr) {
-                onCallback && onCallback({error: 'Server error'});
+            error: function(result) {
+                onCallback && onCallback(result);
             }
         });
     }
