@@ -5,7 +5,7 @@
 })(jQuery);
 
 var Cafe = {
-    canPay: false,
+    canPay: true,
     modeOrder: false,
     totalPrice: 29,
 
@@ -240,7 +240,7 @@ var Cafe = {
             Cafe.apiRequest('makeOrder', params, function(result) {
                 Cafe.toggleLoading(false);
                 if (result.ok) {
-                    $orders.append(params)
+                    Telegram.WebApp.close();
                 }
                 if (result.error) {
                     Cafe.showStatus(result.error);
